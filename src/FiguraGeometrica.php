@@ -1,11 +1,15 @@
 <?php
 include_once("Punto.php");
-    abstract class FiguraGeometrica{
-    protected $nombre = "";
+    public abstract class FiguraGeometrica extends Punto{
+    //Atributos
+    protected $nombre;
 
+    //Constructor
     function __construct($nombre){
         $this->nombre = $nombre;
     }
+    
+    //Métodos
     public function getNombre():string{
         return $this->nombre;
     }

@@ -1,24 +1,25 @@
 <?php
 include_once("FiguraGeometrica.php");
-class cuadrado extends FiguraGeometrica{
+class Cuadrado extends FiguraGeometrica{
     //Atributos
     private $esquina;
     private $lado;
 
     //Constructor
-    function __construct($esquina, $lado){
+    public function __construct($nombre, $esquina, $lado){
+        parent::__construct($nombre);
         $this -> esquina = $esquina;
         $this -> lado = $lado;
     }
 
     //Métodos
-    public function getLado(){
+    public function getLado():float{
         return $this -> lado;
     }
-    public function area(){
+    public function area():float{
         return $this -> lado * $this -> lado;
     }
-    public function perimetro(){
+    public function perimetro():float{
         return $this -> lado * 4;
     }
 }
