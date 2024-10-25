@@ -16,7 +16,7 @@ function assertEquals($expected, $actual, $testName) {
 
 // Test 1: Prueba el cálculo del área de un cuadrado
 $cuadrado = new Cuadrado("Cuadrado de prueba", 5);
-$expectedArea = lado * lado;
+$expectedArea = 5 * 5;
 $actualArea = $cuadrado->area();
 assertEquals($expectedArea, $actualArea, "Prueba del cálculo del área");
 
