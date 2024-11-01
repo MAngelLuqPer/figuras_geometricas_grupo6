@@ -1,4 +1,5 @@
 <?php
+
 class Punto {
     private $y = 0.0;
     private $x = 0.0;
@@ -20,4 +21,5 @@ class Punto {
         return sqrt(($p->x * $p->x) + ($p->y * $p->y) );
     }
 }
+
 ?>
